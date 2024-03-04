@@ -1,8 +1,14 @@
-/* eslint-disable import/no-cycle */
-/* eslint-disable import/extensions */
-/* eslint-disable no-console */
 import readlineSync from 'readline-sync';
-import { name } from '../bin/menu-game.js';
+
+let name = '';
+
+function sayHi() {
+  console.log('Welcome to the Brain Games!');
+  const userName = readlineSync.question('May I have your name? ');
+  name = userName;
+  console.log(`Hello, ${userName}!`);
+  return userName;
+}
 
 function askQuestion(numbers) {
   console.log(`Question: ${numbers}`);
@@ -31,5 +37,5 @@ function sayHooray() {
 }
 
 export {
-  askQuestion, getAnswer, checkAns, sayLoser, sayHooray,
+  sayHi, askQuestion, getAnswer, checkAns, sayLoser, sayHooray,
 };

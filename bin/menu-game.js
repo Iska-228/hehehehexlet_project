@@ -1,11 +1,7 @@
 #!/usr/bin/env node
-/* eslint-disable import/prefer-default-export */
-/* eslint-disable import/no-cycle */
-/* eslint-disable import/no-named-as-default-member */
-/* eslint-disable import/no-named-as-default */
-/* eslint-disable import/extensions */
 
-import { sayHi, chooseGame } from '../src/cli.js';
+import { chooseGame } from '../src/cli.js';
+import { sayHi } from '../src/index.js';
 import playScm from './brain-scm.js';
 import playProgression from './brain-progression.js';
 
@@ -22,4 +18,4 @@ switch (Number(game)) {
     break;
 }
 
-export { name };
+export default name;

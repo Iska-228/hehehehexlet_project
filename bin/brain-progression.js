@@ -1,5 +1,3 @@
-/* eslint-disable import/named */
-/* eslint-disable import/extensions */
 import { progressionTask } from '../src/cli.js';
 import {
   askQuestion, getAnswer, checkAns, sayLoser, sayHooray,

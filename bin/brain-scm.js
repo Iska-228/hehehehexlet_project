@@ -1,6 +1,3 @@
-/* eslint-disable import/named */
-/* eslint-disable import/no-cycle */
-/* eslint-disable import/extensions */
 import { scmTask } from '../src/cli.js';
 import {
   askQuestion, getAnswer, checkAns, sayLoser, sayHooray,

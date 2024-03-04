@@ -1,14 +1,4 @@
-/* eslint-disable import/no-cycle */
-/* eslint-disable import/extensions */
-/* eslint-disable no-console */
 import readlineSync from 'readline-sync';
-
-function sayHi() {
-  console.log('Welcome to the Brain Games!');
-  const userName = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${userName}!`);
-  return userName;
-}
 
 function chooseGame() {
   console.log('Choose your game:');
@@ -27,5 +17,5 @@ function progressionTask() {
 }
 
 export {
-  scmTask, sayHi, chooseGame, progressionTask,
+  scmTask, chooseGame, progressionTask,
 };
