@@ -13,7 +13,9 @@
     "readline-sync": "^1.4.10"
   },
   "bin": {
-    "brain-games": "bin/menu-game.js"
+    "brain-games": "bin/menu-game.js",
+    "brain-scm": "bin/brain-scm.js",
+    "brain-progression": "bin/brain-progression.js"
   },
   "type": "module",
   "devDependencies": {
