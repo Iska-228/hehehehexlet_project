@@ -1,8 +1,9 @@
 /* eslint-disable import/named */
 /* eslint-disable import/extensions */
+import { progressionTask } from '../src/cli.js';
 import {
-  getAnswer, checkAns, progressionTask, sayLoser, sayHooray, askQuestion,
-} from '../src/cli.js';
+  askQuestion, getAnswer, checkAns, sayLoser, sayHooray,
+} from '../src/index.js';
 
 export default function playProgression() {
   let countAns = 0;

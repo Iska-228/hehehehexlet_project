@@ -1,9 +1,10 @@
 /* eslint-disable import/named */
 /* eslint-disable import/no-cycle */
 /* eslint-disable import/extensions */
+import { scmTask } from '../src/cli.js';
 import {
-  getAnswer, checkAns, scmTask, sayLoser, sayHooray, askQuestion,
-} from '../src/cli.js';
+  askQuestion, getAnswer, checkAns, sayLoser, sayHooray,
+} from '../src/index.js';
 
 function playScm() {
   let countAns = 0;

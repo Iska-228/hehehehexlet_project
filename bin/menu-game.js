@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+/* eslint-disable import/prefer-default-export */
 /* eslint-disable import/no-cycle */
 /* eslint-disable import/no-named-as-default-member */
 /* eslint-disable import/no-named-as-default */
@@ -10,7 +11,7 @@ import playProgression from './brain-progression.js';
 
 const name = sayHi();
 const game = chooseGame();
-switch (parseInt(game, 10)) {
+switch (Number(game)) {
   case 1:
     playScm();
     break;
@@ -21,4 +22,4 @@ switch (parseInt(game, 10)) {
     break;
 }
 
-export default { name };
+export { name };
