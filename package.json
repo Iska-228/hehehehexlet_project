@@ -9,10 +9,16 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "make": "^0.0.0"
+    "make": "^0.0.0",
+    "readline-sync": "^1.4.10"
   },
   "bin": {
     "brain-games": "bin/menu-game.js"
   },
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.29.1"
+  }
 }
